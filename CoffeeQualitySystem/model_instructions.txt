@@ -1,0 +1,23 @@
+@echo off
+echo ========================================
+echo MODEL RECOVERY INSTRUCTIONS
+echo ========================================
+echo.
+echo Your model file is missing from: C:\Users\HP\Desktop\CoffeeQualitySystem\models\
+echo.
+echo OPTION 1: Download from Colab
+echo 1. Go to your Google Colab notebook
+echo 2. Run this code:
+echo.
+echo    import joblib
+echo    from google.colab import files
+echo    joblib.dump(model_package, 'coffee_quality_model.pkl')
+echo    files.download('coffee_quality_model.pkl')
+echo.
+echo 3. Move the downloaded file to:
+echo    C:\Users\HP\Desktop\CoffeeQualitySystem\models\
+echo.
+echo OPTION 2: Use temporary model
+echo Run: python recover_model.py
+echo.
+pause
